@@ -1,0 +1,16 @@
+[package]
+name = "runcat-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.45"
+native-windows-gui = { version = "1.0.12", features = ["embed-resource", "menu", "message-window", "tray-notification"] }
+native-windows-derive = "1.0.4"
+flume = "0.10.9"
+systemstat = "0.1.10"
+
+[target.'cfg(windows)'.build-dependencies]
+windres = "0.2.2"
