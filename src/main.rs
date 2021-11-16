@@ -1,3 +1,5 @@
+#![windows_subsystem = "windows"]
+
 use native_windows_derive as nwd;
 use native_windows_gui as nwg;
 
